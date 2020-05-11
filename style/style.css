@@ -5,20 +5,26 @@
   box-sizing: border-box;
 }
 
-
 header {
   height: 150px;
   width: 100%;
   background-color: yellow;
+  position: relative;
 }
 
-/* parte principale */
-.sezione1{
-  /* overflow: hidden; */
+header .p1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* main part */
+.sec1{
   margin: 12px 15px;
 }
 
-.sezione1::after {
+.sec1::after {
   content: "";
   display: table;
   clear: both;
@@ -26,7 +32,7 @@ header {
 
 .left, .right {
   float: left;
-  /* debug */
+  /* debuging point */
   height: 300px;
   background-color: green;
 }
@@ -38,12 +44,9 @@ header {
 .right {
   float: right;
   width: 24%;
-  height: 160px;
   margin: 2px 0;
-}
-
-.right_b{
-  margin: 7px 0;
+  /* debuging point */
+  height: 160px;
 }
 
 .middle {
@@ -51,17 +54,21 @@ header {
   width: 50%;
   float: left;
   margin: 0 1%;
+  /* debuging point */
+  height: 160px;
   height: 380px;
   background-color: purple;
-
 }
 
-
+.right_b{
+  margin: 7px 0;
+}
 
 /* footer */
 
 footer {
-  height: 150px;
+  text-align: right;
+  height: 100px;
   width: 100%;
   background-color: red;
 }
