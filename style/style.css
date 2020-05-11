@@ -58,7 +58,6 @@ header .p1 {
   float: left;
   margin: 0 1%;
   /* debuging point */
-  height: 160px;
   height: 380px;
   background-color: purple;
 }
